@@ -1,27 +1,19 @@
-## 1. Allowed markdown syntaxes on Devchecklists:
-  * [ ] Github removes empty spaces when it compiles a markdown file. For a correct visualization of some pieces of code, please access the [raw version](https://raw.githubusercontent.com/vintasoftware/devchecklists-template/master/checklist-en.md) of this file.
-  * [ ] `##` for titles.
-  * [ ] `* [ ]` syntax to create a parent checklist.
-  * [ ] `    * [ ]` syntax to create a second-level checklist.
-  * [ ] `    * E.g.` syntax to create a second-level sample.
-  * [ ] `      * E.g.` syntax to create a third-level sample.
-  * [ ] Syntax for a simple piece of code `This is code`.
-  * [ ] Syntax for code blocks:
-    ```
-    # Code Block:
-	This is a 
-	piece of code 
-	in a block
-    ```
-
-## 2. Syntaxes to avoid:
-  * [ ] `      * [ ]` third-level checklists.
-  * [ ] `![Alt](/image.png "Image")` images.
-  * [ ] Header syntaxes besides `## Header 2`:
-      ```
-      # Header 1
-      ### Header 3
-      #### Header 4
-      ##### Header 5
-      ###### Header 6 
-      ```
+## 1. Project Kickstart Checklist
+  * [ ] Select Source Control Management (SCM) for
+	  * [ ] Code
+	  * [ ] Build Scripts (Read Gradle, NPM, MVN)
+	  * [ ] CI/CD piepline (Usually a YAML or a Groovy file)
+	  * [ ] Database migration scripts
+	  * [ ] Wiki or ADR
+	  * [ ] Infrastrcuture related code (Ex: dockerfile, docker compose, terraform)
+  * [ ] Select a Build Automation framework like Gradle, NPM, Maven
+  * [ ] Select database versioning framework like Liquibase, Flyway or Sequelize)
+  * [ ] Start with a test case
+	  * [ ] Prefer TDD; Select a unit testing framework like JUnit, XUnit, Mocha, Chai, Jest
+	  * [ ] Run tests on every push or PR
+	  * [ ] Configure CI/CD pipeline to fail on unit test failure
+  * [ ] Choose a logging framework
+  * [ ] Configure static code analysis like linting, PMD, Sonar in IDE and build pipline
+  * [ ] Create quality gates in build pipeline
+  * [ ] Fully automate build, release and deployment process
+  * [ ] Deploy a walking skeleton
